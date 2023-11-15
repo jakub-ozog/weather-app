@@ -7,7 +7,6 @@ const wind = document.querySelector('.data__wind')
 const searchInput = document.querySelector('.search__input')
 const searchBtn = document.querySelector('.search__btn')
 
-
 function generateURL(e) {
     e.preventDefault()
     let inputValue = searchInput.value;
@@ -23,7 +22,6 @@ function generateURL(e) {
                 }
                 return response.json()
             })
-
             .then(data => {
                 console.log(data)
                 cityName.textContent = data.name;
@@ -32,11 +30,9 @@ function generateURL(e) {
                 pressure.textContent = 'Pressure:' + " " + data.main.pressure + " " + "hPa";
                 wind.textContent = 'Wind:' + " " + data.wind.speed + " " + "km/h";
             })
-
             .catch(error => {
                 console.error("Error: " + error.message);
             })
     }
 }
-
 searchBtn.addEventListener('click', generateURL)
