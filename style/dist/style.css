@@ -15,3 +15,28 @@ body {
   place-content: center;
   min-block-size: 100vh;
 }
+
+.app {
+  color: white;
+}
+.app__title {
+  font-size: 3rem;
+  text-align: center;
+}
+.app__subtitle {
+  font-size: 1.25rem;
+  color: #e4e4e4;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.search label {
+  color: white;
+  font-size: 0.75rem;
+}
+.search input {
+  padding: 0.5rem 1.25rem;
+}
