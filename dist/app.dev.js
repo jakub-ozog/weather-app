@@ -9,7 +9,6 @@ var searchInput = document.querySelector('.search__input');
 var searchBtn = document.querySelector('.search__btn');
 
 function generateURL(e) {
-  e.preventDefault();
   var inputValue = searchInput.value;
 
   if (inputValue.trim() !== '') {

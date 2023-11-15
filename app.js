@@ -8,7 +8,7 @@ const searchInput = document.querySelector('.search__input')
 const searchBtn = document.querySelector('.search__btn')
 
 function generateURL(e) {
-    e.preventDefault()
+   
     let inputValue = searchInput.value;
 
     if (inputValue.trim() !== '') {
