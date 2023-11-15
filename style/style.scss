@@ -44,3 +44,24 @@ body {
         padding: .5rem 1.25rem;
     }
 }
+
+.data {
+    &__wrapper {
+        margin-top: 2rem;
+        color: rgb(43, 151, 144);
+        border: 1px solid #113739;
+        padding: 1rem;
+    }
+
+    &__city {
+        font-size: 1.25rem;
+    }
+
+    &__temperature {
+        font-size: 1.5rem;
+    }
+
+    &__details {
+        margin-top: 1.25rem;
+    }
+}

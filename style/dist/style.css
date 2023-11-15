@@ -40,3 +40,19 @@ body {
 .search input {
   padding: 0.5rem 1.25rem;
 }
+
+.data__wrapper {
+  margin-top: 2rem;
+  color: #2b9790;
+  border: 1px solid #113739;
+  padding: 1rem;
+}
+.data__city {
+  font-size: 1.25rem;
+}
+.data__temperature {
+  font-size: 1.5rem;
+}
+.data__details {
+  margin-top: 1.25rem;
+}
