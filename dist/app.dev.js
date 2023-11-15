@@ -9,7 +9,6 @@ var searchInput = document.querySelector('.search__input');
 var searchBtn = document.querySelector('.search__btn');
 
 function generateURL(e) {
-  e.preventDefault();
   var inputValue = searchInput.value;
 
   if (inputValue.trim() !== '') {
@@ -24,9 +23,9 @@ function generateURL(e) {
       console.log(data);
       cityName.textContent = data.name;
       temperature.textContent = Math.round(data.main.temp) + "°C";
-      humidity.textContent = data.main.humidity + "%";
-      pressure.textContent = data.main.pressure + " " + "hPa";
-      wind.textContent = data.wind.speed + " " + "km/h";
+      humidity.textContent = 'Humidity:' + " " + data.main.humidity + "%";
+      pressure.textContent = 'Pressure:' + " " + data.main.pressure + " " + "hPa";
+      wind.textContent = 'Wind:' + " " + data.wind.speed + " " + "km/h";
     })["catch"](function (error) {
       console.error("Error: " + error.message);
     });
